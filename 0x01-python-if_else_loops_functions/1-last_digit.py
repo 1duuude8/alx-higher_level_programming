@@ -2,7 +2,6 @@
 import random
 
 number = random.randint(-10000, 10000)
-print(number)
 last_digit_str = str(number)[-1]
 last_dig = int(last_digit_str)
 if last_dig > 5:
