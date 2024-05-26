@@ -1,3 +1,2 @@
-list1 = [1, 2, 3, 4, 5]
-newlist = list(list1)
-print(newlist)
+matrix = [[1, 2, 3, 4], [4, 5, 6], [7, 8, 9]]
+print(len(matrix[0]))
