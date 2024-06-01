@@ -8,6 +8,6 @@ def only_diff_elements(set_1, set_2):
         set_2 (set): the second set
 
     returns:
-        set: A set containing elements that are in either of the sets but not in both.
+        set: containing elements that are in either of sets but not in both.
     """
     return set_1 ^ set_2
