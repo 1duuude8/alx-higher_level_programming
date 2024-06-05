@@ -235,6 +235,66 @@ Write a function that returns a new dictionary with all values multiplied by 2
 
 
 
+Task 10:S
+
+Write a function that returns a key with the biggest integer value.
+
+    Prototype: def best_score(a_dictionary):
+    You can assume that all values are only integers
+    If no score found, return None
+    You can assume all students have a different score
+    You are not allowed to import any module
+
+guillaume@ubuntu:~/0x04$ cat 10-main.py
+#!/usr/bin/python3
+best_score = __import__('10-best_score').best_score
+
+a_dictionary = {'John': 12, 'Bob': 14, 'Mike': 14, 'Molly': 16, 'Adam': 10}
+best_key = best_score(a_dictionary)
+print("Best score: {}".format(best_key))
+
+best_key = best_score(None)
+print("Best score: {}".format(best_key))
+
+guillaume@ubuntu:~/0x04$ ./10-main.py
+Best score: Molly
+Best score: None
+guillaume@ubuntu:~/0x04$ 
+
+
+Task 11. Multiply by using map
+
+Write a function that returns a list with all values multiplied by a number without using any loops.
+
+    Prototype: def multiply_list_map(my_list=[], number=0):
+    Returns a new list:
+        Same length as my_list
+        Each value should be multiplied by number
+    Initial list should not be modified
+    You are not allowed to import any module
+    You have to use map
+    Your file should be max 3 lines
+
+guillaume@ubuntu:~/0x04$ cat 11-main.py
+#!/usr/bin/python3
+multiply_list_map = __import__('11-multiply_list_map').multiply_list_map
+
+my_list = [1, 2, 3, 4, 6]
+new_list = multiply_list_map(my_list, 4)
+print(new_list)
+print(my_list)
+
+guillaume@ubuntu:~/0x04$ ./11-main.py
+[4, 8, 12, 16, 24]
+[1, 2, 3, 4, 6]
+guillaume@ubuntu:~/0x04$ 
+
+
+
+
+
+
+
 
 
 
