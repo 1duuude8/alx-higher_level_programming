@@ -8,10 +8,10 @@ def multiply_list_map(my_list=[], number=0):
         number (int) : number we use to multply list elements
 
     return
-        list: A new list containing the multiplied elements
+        new_list (list): A new list containing the multiplied elements
     """
-    new_list = list(map(lambda n: n * number, my_list))
-    return new_list
+    ne_list = my_list
+    return list(map(lambda n: n * number, ne_list))
 
 
 my_list = [1, 2, 3, 4, 6]
